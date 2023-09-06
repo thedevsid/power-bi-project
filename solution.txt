@@ -1,6 +1,3 @@
-POWER BI PROJECT
-
-
 import powerbi
 import pandas as pd
 
@@ -20,29 +17,3 @@ chart.add_anomaly_detection()
 
 # Save the report
 report.save("credit_card_anomalies.pbix")
-
-This code will first import the credit card transaction data into a Pandas DataFrame. Then, it will create a Power BI report and add a line chart to the report. The line chart will show the transaction amount over time. The code will then add anomaly detection to the line chart, which will highlight any anomalies in the data. The report will be saved as a Power BI file.
-
-To run this code, you will need to install the Power BI library. You can do this by running the following command in your terminal:
-
-Once you have installed Power BI, you can run the code by saving it as a Python script and then running the script from the command line.
-
-Here is an explanation of the code:
-
-The import powerbi line imports the Power BI library.
-The data = pd.read_csv("credit_card_transactions.csv") line imports the credit card transaction data into a Pandas DataFrame.
-The report = powerbi.create_report(data) line creates a Power BI report.
-The chart = report.add_chart("Line") line adds a line chart to the report.
-The chart.set_x_axis("Transaction Date") line sets the x-axis of the line chart to the Transaction Date column.
-The chart.set_y_axis("Transaction Amount") line sets the y-axis of the line chart to the Transaction Amount column.
-The chart.add_anomaly_detection() line adds anomaly detection to the line chart.
-The report.save("credit_card_anomalies.pbix") line saves the report as a Power BI file.
-I hope this helps!
-
-Here is an explanation of the abstract:
-
-The first sentence introduces the project and its goals.
-The second sentence explains what anomalies are and why they are important to detect in credit card transactions.
-The third sentence describes how Power BI can be used to analyze large datasets and identify suspicious patterns.
-The fourth sentence states the purpose of the project, which is to provide a comprehensive guide on leveraging Power BI to detect anomalies.
-The fifth sentence concludes the abstract by stating the benefits of using Power BI for anomaly detection, which are to enhance fraud detection capabilities and protect businesses and financial institutions from financial losses.
